@@ -1,0 +1,105 @@
+<div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse">
+        <ul class="nav in" id="side-menu">
+            <sidebar-search></sidebar-search>
+            <li ui-sref-active="active">
+                <a ui-sref="dashboard.home"><i class="fa fa-dashboard fa-fw"></i>Dashboard </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="dashboard.customer"><i class="fa fa-dashboard fa-fw"></i>Customer Registration</a>
+            </li>
+            <li ng-class="{active: collapseVar==1}">
+                {{dropDown}}
+                <a href="" ng-click="check(1)">
+                    <i class="fa fa-wrench fa-fw"></i> User Setup
+                    <span class="fa arrow"></span>
+                </a>
+                <ul class="nav nav-second-level" collapse="collapseVar!=1">
+                    <li ui-sref-active="active">
+                        <a ui-sref="dashboard.addUsers">Add Users</a>
+                    </li>
+                </ul>
+                <ul class="nav nav-second-level" collapse="collapseVar!=1">
+                    <li ui-sref-active="active">
+                        <a ui-sref="dashboard.userRole">User Role</a>
+                    </li>
+                </ul>
+                <!-- /.nav-second-level -->
+            </li>
+            <li ng-class="{active: collapseVar==2}">
+                {{dropDown}}
+                <a href="" ng-click="check(2)">
+                    <i class="fa fa-wrench fa-fw"></i> WorkOrder -Inward
+                    <span class="fa arrow"></span>
+                </a>
+                <ul class="nav nav-second-level" collapse="collapseVar!=2">
+                    <li ui-sref-active="active">
+                        <a ui-sref="dashboard.workOrderRecorder">Customer Work Order Recorder</a>
+                    </li>
+                </ul>
+                <ul class="nav nav-second-level" collapse="collapseVar!=2">
+                    <li ui-sref-active="active">
+                        <a ui-sref="dashboard.rgpRecorder">Customer RGP Recorder</a>
+                    </li>
+                </ul>
+                <ul class="nav nav-second-level" collapse="collapseVar!=2">
+                    <li ui-sref-active="active">
+                        <a ui-sref="dashboard.jobWorkOrder">Job Work Order</a>
+                    </li>
+                </ul>
+                <ul class="nav nav-second-level" collapse="collapseVar!=2">
+                    <li ui-sref-active="active">
+                        <a ui-sref="dashboard.inwardInspectionReport">Inward Inspection Report</a>
+                    </li>
+                </ul>
+                <!-- /.nav-second-level -->
+            </li>
+            <li ng-class="{active: collapseVar==3}">
+                {{dropDown}}
+                <a href="" ng-click="check(3)">
+                    <i class="fa fa-wrench fa-fw"></i> WorkOrder -Outward
+                    <span class="fa arrow"></span>
+                </a>
+                <ul class="nav nav-second-level" collapse="collapseVar!=3">
+                    <li ui-sref-active="active">
+                        <a ui-sref="dashboard.outwardInspectionReport">Outward Inspection Report</a>
+                    </li>
+                </ul>
+                <ul class="nav nav-second-level" collapse="collapseVar!=3">
+                    <li ui-sref-active="active">
+                        <a ui-sref="dashboard.deliveryChallan">Delivery Challan</a>
+                    </li>
+                </ul>
+                <ul class="nav nav-second-level" collapse="collapseVar!=3">
+                    <li ui-sref-active="active">
+                        <a ui-sref="dashboard.jobWorkInvoice">Job Work Invoice</a>
+                    </li>
+                </ul>
+                <ul class="nav nav-second-level" collapse="collapseVar!=3">
+                    <li ui-sref-active="active">
+                        <a ui-sref="dashboard.outwardGatePass">Outward GatePass</a>
+                    </li>
+                </ul>
+                <!-- /.nav-second-level -->
+            </li>
+            <li ng-class="{active: collapseVar==4}">
+                {{dropDown}}
+                <a href="" ng-click="check(4)">
+                    <i class="fa fa-wrench fa-fw"></i> Print
+                    <span class="fa arrow"></span>
+                </a>
+                <ul class="nav nav-second-level" collapse="collapseVar!=4">
+                    <li ui-sref-active="active">
+                        <a ui-sref="dashboard.po">Customer Purchase Order</a>
+                    </li>
+                </ul>
+                <!-- /.nav-second-level -->
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="dashboard.report"><i class="fa fa-dashboard fa-fw"></i> Reports </a>
+            </li>
+        </ul>
+    </div>
+    <!-- /.sidebar-collapse -->
+</div>
+
