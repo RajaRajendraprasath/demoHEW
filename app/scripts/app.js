@@ -170,16 +170,24 @@ angular
        })
 
        .state('dashboard.rgpRecorder', {
-           templateUrl: 'views/hew/workOrderInward/customerRGP.html',
-           url: '/customerRGP'
+           templateUrl: 'views/hew/workOrderInward/rgpRecorder.html',
+           url: '/rgpRecorder'
+       })
+       .state('dashboard.rgpCreator', {
+           templateUrl: 'views/hew/workOrderInward/rgpCreator.html',
+           url: '/rgpCreator'
        })
        .state('dashboard.inwardInspectionReport', {
            templateUrl: 'views/hew/workOrderInward/inwardInspectionReport.html',
            url: '/inwardIR'
        })
+       .state('dashboard.workOrderCreator', {
+           templateUrl: 'views/hew/workOrderInward/workOrderCreator.html',
+           url: '/workOrderCreator'
+       })
        .state('dashboard.workOrderRecorder', {
-           templateUrl: 'views/hew/workOrderInward/customerWorkOrder.html',
-           url: '/customerWorkOrder'
+           templateUrl: 'views/hew/workOrderInward/workOrderRecorder.html',
+           url: '/workOrderRecorder'
        })
        .state('dashboard.jobWorkOrder', {
            templateUrl: 'views/hew/workOrderInward/jobWorkOrder.html',
