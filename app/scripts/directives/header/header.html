@@ -1,18 +1,39 @@
 <nav class="navbar navbar-default navbar-fixed-top row" role="navigation" style="margin-bottom: 0;min-height: 100px !important;border-bottom-width:0px !important;">
-    <div class="row" style="max-width:1100px;margin-left:0px !important;margin-right:0px !important;">
+    <div class="row" style="max-width:1320px;margin-left:0px !important;margin-right:0px !important;">
         <div class="navbar-header">
-            <a class="navbar-brand" href="http://hew.co.in">
-                <img alt="Brand" src="Images/HEWSymbol.jpg">
-            </a>
-            <h3 class="navbar-text navbar-left">Welcome Mark !</h3>
-        </div>       
+            <div class="navbar-header">
+                <img style="width: 120px; padding-top: 10px; padding-left: 20px;" alt="Brand" src="Images/hewlogo_resize.jpg">
+                <h4 class="navbar-text navbar-right" style="font-size:22px !important;">Welcome Mark !</h4>
+            </div>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-user fa-fw" style="font-size:22px;color:#D66ECD !important;"></i>
+                    <i class="fa fa-caret-down" style="font-size:22px;color:#D66ECD !important;"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li>
+                        <a href="#" style="font-size:14px;font-family:'Arial, Helvetica, sans-serif';"><i class="fa fa-user fa-fw" style="font-size:18px;color:#D66ECD !important;"></i> User Profile</a>
+                    </li>
+                    <li>
+                        <a href="#" style="font-size:14px;font-family:'Arial, Helvetica, sans-serif';"><i class="fa fa-gear fa-fw" style="font-size:18px;color:#D66ECD !important;"></i> Settings</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a ui-sref="login" href="#/login" style="font-size:14px;font-family:'Arial, Helvetica, sans-serif';"><i class="fa fa-sign-out fa-fw" style="font-size:18px;color:#D66ECD !important;"></i> Logout</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
         <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1" style="margin-top:50px !important">
-            <ul class="nav nav-tabs pull-right" id="myTab" style="border-bottom-width: 5px;border-bottom-color:#D66ECD">
-                <li class="active" style="margin-bottom:0px !important"><a ui-sref="dashboard.home" role="tab">DASHBOARD </a></li>
-                <li class="active" style="margin-bottom:0px !important"><a ui-sref="dashboard.customer">REGISTRATION</a></li>
-                <li class="active" style="margin-bottom:0px !important"><a ui-sref="dashboard.rgpRecorder">WORK ORDER</a></li>
-                <li class="active" style="margin-bottom:0px !important"><a ui-sref="dashboard.jobWorkOrder">KPI REPORTS</a></li>
-                <li class="active" style="margin-bottom:0px !important"><a ui-sref="dashboard.inwardInspectionReport">CONTACTS</a></li>
+            <ul class="nav nav-tabs pull-left" id="myTab" style="border-bottom-width: 5px;border-bottom-color:#D66ECD;margin-left:30px;">
+                <li class="active" style="margin-bottom:0px !important"><a ui-sref="dashboard.home" style="font-size:13px;font-family:'HelveticaCondensed';color:grey;">DASHBOARD </a></li>
+                <li class="active" style="margin-bottom:0px !important"><a ui-sref="dashboard.customer" style="font-size:13px;font-family:'HelveticaCondensed';color:grey;">REGISTRATION</a></li>
+                <li class="active" style="margin-bottom:0px !important"><a ui-sref="dashboard.rgpRecorder" style="font-size:13px;font-family:'HelveticaCondensed';color:grey;">WORK ORDER</a></li>
+                <li class="active" style="margin-bottom:0px !important"><a ui-sref="dashboard.jobWorkOrder" style="font-size:13px;font-family:'HelveticaCondensed';color:grey;">KPI REPORTS</a></li>
+                <li class="active" style="margin-bottom:0px !important"><a ui-sref="dashboard.inwardInspectionReport" style="font-size:13px;font-family:'HelveticaCondensed';color:grey;">REPORTS</a></li>
             </ul>
         </div>
     </div>
