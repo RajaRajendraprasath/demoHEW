@@ -2,110 +2,109 @@
     <div class="sidebar-nav" style="margin-top:18px;">
         <ul class="nav in" id="side-menu">         
             <li ui-sref-active="active">
-                <a ui-sref="dashboard.home" style="color:#18A689;"><i class="fa fa-bar-chart-o" style="padding-left:10px;font-size: 20px;"></i>&nbsp;&nbsp;Dashboard</a>
+                <a ui-sref="dashboard.home"><i class="fa fa-bar-chart-o" style="padding-left:10px;font-size: 20px;"></i>&nbsp;&nbsp;Dashboard</a>
             </li>
             <li ui-sref-active="active">
-                <a ui-sref="dashboard.customer" style="color:#18A689;"><i class="fa fa-suitcase" style="padding-left:10px;font-size: 20px;"></i>&nbsp;&nbsp;Customer Registration</a>
+                <a ui-sref="dashboard.customer"><i class="fa fa-suitcase" style="padding-left:10px;font-size: 20px;"></i>&nbsp;&nbsp;Customer Registration</a>
             </li>
             <li ng-class="{active: collapseVar==1}">
                 {{dropDown}}
-                <a href="" ng-click="check(1)" style="color:#18A689">
+                <a href="" ng-click="check(1)">
                     <i class="fa fa-user" style="padding-left:10px;font-size: 20px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;User Setup
                     <span class="fa arrow"></span>
                 </a>
                 <ul class="nav nav-second-level" collapse="collapseVar!=1">
                     <li ui-sref-active="active">
-                        <a ui-sref="dashboard.addUsers" style="color:#18A689;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add Users</a>
+                        <a ui-sref="dashboard.addUsers">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add Users</a>
                     </li>
                 </ul>
                 <ul class="nav nav-second-level" collapse="collapseVar!=1">
                     <li ui-sref-active="active">
-                        <a ui-sref="dashboard.userRole" style="color:#18A689;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;User Role</a>
+                        <a ui-sref="dashboard.userRole">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;User Role</a>
                     </li>
                 </ul>
-                <!-- /.nav-second-level -->
             </li>
             <li ng-class="{active: collapseVar==2}">
                 {{dropDown}}
-                <a href="" ng-click="check(2)" style="color:#18A689">
-                    <i class="fa fa-arrow-circle-left" style="padding-left:10px;font-size: 20px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Inward Work Order
+                <a href="" ng-click="check(2)">
+                    <i class="fa fa-arrow-circle-left" style="padding-left:10px;font-size: 20px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Job Work Order - Inward 
                     <span class="fa arrow"></span>
                 </a>
                 <ul class="nav nav-second-level" collapse="collapseVar!=2">
                     <li ui-sref-active="active">
-                        <a ui-sref="dashboard.workOrderRecorder" style="color:#18A689;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Work Order Recorder</a>
+                        <a ui-sref="dashboard.workOrderRecorder">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create Purchase Order</a>
                     </li>
                 </ul>
-                <ul class="nav nav-second-level" collapse="collapseVar!=2">
+                <!--<ul class="nav nav-second-level" collapse="collapseVar!=2">
                     <li ui-sref-active="active">
                         <a ui-sref="dashboard.workOrderCreator" style="color:#18A689;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Work Order Creator</a>
                     </li>
-                </ul>
+                </ul>-->
                 <ul class="nav nav-second-level" collapse="collapseVar!=2">
                     <li ui-sref-active="active">
-                        <a ui-sref="dashboard.rgpRecorder" style="color:#18A689;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Customer RGP Recorder</a>
+                        <a ui-sref="dashboard.rgpRecorder">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create Returnable Gatepass</a>
                     </li>
                 </ul>
-                <ul class="nav nav-second-level" collapse="collapseVar!=2">
+                <!--<ul class="nav nav-second-level" collapse="collapseVar!=2">
                     <li ui-sref-active="active">
                         <a ui-sref="dashboard.rgpCreator" style="color:#18A689;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Customer RGP Creator</a>
                     </li>
-                </ul>
+                </ul>-->
                 <ul class="nav nav-second-level" collapse="collapseVar!=2">
                     <li ui-sref-active="active">
-                        <a ui-sref="dashboard.jobWorkOrder" style="color:#18A689;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create Job Work Order</a>
+                        <a ui-sref="dashboard.jobWorkOrder">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Job Work Order</a>
                     </li>
                 </ul>
                 <ul class="nav nav-second-level" collapse="collapseVar!=2">
                     <li ui-sref-active="active">
-                        <a ui-sref="dashboard.inwardInspectionReport" style="color:#18A689;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inward Inspection Report</a>
+                        <a ui-sref="dashboard.inwardInspectionReport">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inward Inspection Report</a>
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->
             </li>
             <li ng-class="{active: collapseVar==3}">
                 {{dropDown}}
-                <a href="" ng-click="check(3)" style="color:#18A689">
-                    <i class="fa fa-arrow-circle-right" style="padding-left:10px;font-size: 20px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Outward Work Order
+                <a href="" ng-click="check(3)">
+                    <i class="fa fa-arrow-circle-right" style="padding-left:10px;font-size: 20px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Job Work Order - Outward
                     <span class="fa arrow"></span>
                 </a>
                 <ul class="nav nav-second-level" collapse="collapseVar!=3">
                     <li ui-sref-active="active">
-                        <a ui-sref="dashboard.outwardInspectionReport" style="color:#18A689;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Outward Inspection Report</a>
+                        <a ui-sref="dashboard.outwardInspectionReport">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Outward Inspection Report</a>
                     </li>
                 </ul>
                 <ul class="nav nav-second-level" collapse="collapseVar!=3">
                     <li ui-sref-active="active">
-                        <a ui-sref="dashboard.deliveryChallan" style="color:#18A689;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delivery Challan</a>
+                        <a ui-sref="dashboard.deliveryChallan">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delivery Challan</a>
                     </li>
                 </ul>
                 <ul class="nav nav-second-level" collapse="collapseVar!=3">
                     <li ui-sref-active="active">
-                        <a ui-sref="dashboard.jobWorkInvoice" style="color:#18A689;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Job Work Invoice</a>
+                        <a ui-sref="dashboard.jobWorkInvoice">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Job Work Invoice</a>
                     </li>
                 </ul>
                 <ul class="nav nav-second-level" collapse="collapseVar!=3">
                     <li ui-sref-active="active">
-                        <a ui-sref="dashboard.outwardGatePass" style="color:#18A689;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Outward GatePass</a>
+                        <a ui-sref="dashboard.outwardGatePass">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create GatePass</a>
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->
             </li>
             <li ng-class="{active: collapseVar==4}">
                 {{dropDown}}
-                <a href="" ng-click="check(4)" style="color:#18A689">
+                <a href="" ng-click="check(4)">
                     <i class="fa fa-print" style="padding-left:10px;font-size: 20px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Print Challan
                     <span class="fa arrow"></span>
                 </a>
                 <ul class="nav nav-second-level" collapse="collapseVar!=4">
                     <li ui-sref-active="active">
-                        <a ui-sref="dashboard.po" style="color:#18A689;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Customer Purchase Order</a>
+                        <a ui-sref="dashboard.po">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Customer Purchase Order</a>
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->
             </li>
             <li ui-sref-active="active">
-                <a ui-sref="dashboard.report" style="color:#18A689;"><i class="fa fa-files-o" style="padding-left:10px;font-size: 20px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Reports </a>
+                <a ui-sref="dashboard.report"><i class="fa fa-files-o" style="padding-left:10px;font-size: 20px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Reports </a>
             </li>
         </ul>
     </div>
